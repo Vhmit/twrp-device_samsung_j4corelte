@@ -14,5 +14,7 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_j4corelte-userdebug
-add_lunch_combo omni_j4corelte-eng
+make clean
+export ALLOW_MISSING_DEPENDENCIES=true
+lunch omni_j4corelte-eng
+make recoveryimage

@@ -17,6 +17,5 @@
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/omni_j4corelte.mk
 
-#COMMON_LUNCH_CHOICES := \
-# omni_j4corelte-userdebug \
-# omni_j4corelte-eng
+COMMON_LUNCH_CHOICES := \
+    omni_j4corelte-eng
