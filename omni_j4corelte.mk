@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-#Inherit device configuration
+# Inherit device configuration
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Specify phone tech before including full_phone
@@ -38,15 +38,10 @@ PRODUCT_PACKAGES += \
     libcryptfs_hw \
     qcom_decrypt
 
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=mdfpp \
     ro.hardware.gatekeeper=mdfpp \
     ro.security.keystore.keytype=gak \
-
-# Time Zone data for recovery
-#PRODUCT_COPY_FILES += \
-    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := j4corelte
